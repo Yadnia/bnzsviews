@@ -1,0 +1,149 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .login-box {
+    text-align: center;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+  }
+  
+  .login-box h1 {
+    font-size: 2rem;
+    color: #0036bf;
+    margin-bottom: 20px;
+  }
+  
+  form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0036bf;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #002799;
+  }
+  
+  .login-box p {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #333;
+  }
+  
+  .login-box a {
+    color: #0036bf;
+    text-decoration: none;
+  }
+  
+  .decoration {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  .shapes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .shape {
+    position: absolute;
+    border: 5px solid;
+  }
+  
+  .shape.blue {
+    border-color: #0036bf;
+    width: 100px;
+    height: 100px;
+    top: 20px;
+    left: 20px;
+  }
+  
+  .shape.yellow {
+    border-color: #ffd700;
+    width: 150px;
+    height: 150px;
+    bottom: 50px;
+    right: 30px;
+  }
+  
+  .shape.black {
+    border-color: #000;
+    width: 200px;
+    height: 200px;
+    top: 100px;
+    right: 60px;
+  }
+  
+  .bee {
+    position: absolute;
+    width: 50px;
+    animation: fly 4s infinite;
+  }
+  
+  .bee:nth-child(1) {
+    top: 50%;
+    left: 10%;
+  }
+  
+  .bee:nth-child(2) {
+    bottom: 10%;
+    right: 20%;
+  }
+  
+  @keyframes fly {
+    0% {
+      transform: translate(0, 0);
+    }
+    50% {
+      transform: translate(10px, -10px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+  
+  footer {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+  }
+  
+  footer .logo img {
+    width: 100px;
+  }
+  
